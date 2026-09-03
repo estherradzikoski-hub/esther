@@ -37,7 +37,17 @@ text-align: center;
     por:Esther allana
 <p> sejam bem vindos ao meu blog, vou compartilhar Fatos divertidos e raros sobre a vida de várias espécies na Terra</p>
 <img src="image.png" alt="crie uma imagem de animais diferentes">
+            <button>❤️<span>0</span></button>
         </main>
 </body>
+
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </html>
 
